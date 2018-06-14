@@ -1372,7 +1372,6 @@ table a,
 		white-space: nowrap;
 	}
 	.inline li {
-		display: block;
 		margin-bottom: 10px;
 	}
 	.pushright li {
