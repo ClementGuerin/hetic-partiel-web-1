@@ -56,6 +56,41 @@
 	text-transform: uppercase;
 }
 
+.navigation_show{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  animation: navigationShow 1s;
+  z-index: 9999 !important;
+}
+
+@keyframes navigationShow{
+  0%{
+    top: -130px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+
+.navigation_hide{
+  position: fixed;
+  width: 100%;
+  top: -130px;
+  background: rgba(0,0,0,0.8);
+  animation: navigationHide 0.3s;
+  z-index: 9999 !important;
+}
+
+@keyframes navigationHide{
+  0%{
+    top: 0px;
+  }
+  100%{
+    top: -130px;
+  }
+}
 
 /* Page Intro --------------------------------------------------------------------------------------------------------------- */
 
