@@ -16,6 +16,11 @@
 	margin: 0;
 }
 
+#topbar #menu_mobile{
+    font-size: 24px;
+    display: none;
+}
+
 #topbar ul {
 	float: right;
 }
@@ -1208,20 +1213,47 @@ table a,
 /* Mobile Devices --------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width:900px) {
+    .fl_left, .fl_right {
+        display: block;
+        float: none;
+    }
 	.hoc {
 		max-width: 90%;
 	}
 	#topbar {}
+    #topbar #menu_mobile{
+        display: inline-block;
+    }
 	#header {
 		padding: 30px 0;
+        text-align: center;
 	}
 	#header #logo {
 		margin-top: 3px;
 	}
-	#mainav {}
-	#mainav ul {
-		display: none;
-	}
+	#mainav {
+        display: none;
+    }
+    #mainav li{
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    #mainav .drop::after, #mainav li li .drop::after{
+        left: inherit;
+        margin-left: 8px;
+    }
+    #mainav ul ul{
+        z-index: inherit;
+        position: relative;
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    #mainav ul ul ul {
+        left: 0;
+    }
 	#mainav form {
 		display: block;
 	}
@@ -1248,11 +1280,6 @@ table a,
 		float: none;
 		margin: 0 0 10px 0;
 	}
-	.fl_left,
-	.fl_right {
-		display: block;
-		float: none;
-	}
 	.group .group>*:last-child,
 	.clear .clear>*:last-child,
 	.clear .group>*:last-child,
@@ -1271,9 +1298,6 @@ table a,
 		width: auto;
 		margin: 0 0 30px 0;
 		padding: 0;
-	}
-	#header {
-		text-align: center;
 	}
 	#header #logo {
 		margin: 0 0 15px 0;

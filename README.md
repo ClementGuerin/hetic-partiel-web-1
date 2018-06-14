@@ -11,7 +11,7 @@ Vous devez réparer et/ou développer les bugfix/features qu'on retrouve dans l'
 Chaque issue a un barème attribué. Afin d'avoir 20, l'ensemble des issues doivent être prises en compte.
 
 ## Déroulement
-* MISE A JOUR : FORKER LE REPO
+* Cloner le repository
 * Créer une branche à votre nom-prénom (pas prénom-nom)
 * Créer autant de commit que vous réparez d'issues (4 issues = 4 commit)
 * Pusher votre branch sur le repository et ouvrir une pull request en mettant en commentaire de celle-ci :
@@ -20,6 +20,7 @@ Chaque issue a un barème attribué. Afin d'avoir 20, l'ensemble des issues doiv
   - Fixes #3
   - ... Le numéros étant celui de l'issue en question.
 
+* Mettre en review : David Venin
 * Mettre le label : Need review / Need help
 * N'hésitez pas à mettre en commentaire ce que vous avez trouvé difficile.
 
