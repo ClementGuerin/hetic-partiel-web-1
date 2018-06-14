@@ -36,6 +36,20 @@ window.addEventListener('scroll', function(){
     }
 })
 
-function showNavigation(){
-    
-}
+// ScrollToTop
+
+window.addEventListener('scroll', function(){
+  if(window.pageYOffset > 150){
+    document.querySelector('#backtotop').classList.add('visible');
+  } else {
+    document.querySelector('#backtotop').classList.remove('visible');
+  }
+})
+
+document.querySelector('#backtotop').addEventListener('click', function(){
+  window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+  });
+})
