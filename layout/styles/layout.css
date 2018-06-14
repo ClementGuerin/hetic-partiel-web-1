@@ -1357,6 +1357,8 @@ table a,
 		width: auto;
 		margin: 0 0 30px 0;
 		padding: 0;
+        text-align: center;
+        max-width: inherit !important;
 	}
 	#header #logo {
 		margin: 0 0 15px 0;
@@ -1370,9 +1372,6 @@ table a,
 	}
 	.sectiontitle {
 		max-width: none;
-	}
-	.services+footer {
-		text-align: left;
 	}
 	.cta> :first-child {
 		margin-top: 0;
